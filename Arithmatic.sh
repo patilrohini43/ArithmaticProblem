@@ -17,8 +17,3 @@ storeResult["Result_3"]=$cal3
 storeResult["Result_4"]=$cal4
 
 len=${#storeResult[@]}
-
-for((i=0;i<=$len;i++))
-do
-	echo "$i	${storeResult[Result_$i]}"
-done
