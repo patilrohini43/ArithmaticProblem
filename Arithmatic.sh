@@ -10,5 +10,15 @@ echo $cal1
 echo $cal2
 echo $cal3
 echo $cal4
+declare -A storeResult
+storeResult["Result_1"]=$cal1
+storeResult["Result_2"]=$cal2
+storeResult["Result_3"]=$cal3
+storeResult["Result_4"]=$cal4
 
+len=${#storeResult[@]}
 
+for((i=0;i<=$len;i++))
+do
+	echo "$i	${storeResult[Result_$i]}"
+done
