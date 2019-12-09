@@ -17,3 +17,9 @@ storeResult["Result_3"]=$cal3
 storeResult["Result_4"]=$cal4
 
 len=${#storeResult[@]}
+count=0
+for ((i=0;i<$len;i++))
+do
+	array[((count++))]=${storeResult[Result_$i]}
+done
+
