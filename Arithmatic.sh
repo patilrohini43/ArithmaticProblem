@@ -28,4 +28,3 @@ do
 done
 
 echo $(printf "%d\n" ${array[@]} | sort -n  )
-echo $(printf "%d\n" ${array[@]} | sort -nr )
