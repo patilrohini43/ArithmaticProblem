@@ -3,22 +3,22 @@ read -p "Enter First Input" a
 read -p "Enter Second Input" b
 read -p "Enter Third Input" c
 
-operation1=$(( a + b * c ))
-operation2=$(( a * b + c ))
-operation3=$(( c + a / b ))
-operation4=$(( a % b + c))
+cal1=$(( a + b * c ))
+cal2=$(( a * b + c ))
+cal3=$(( c + a / b ))
+cal4=$(( a % b + c))
 
-echo $operation1
-echo $operation2
-echo $operation3
-echo $operation4
+echo $cal1
+echo $cal2
+echo $cal3
+echo $cal4
 
 declare -A storeResult
 
-storeResult["Result_1"]=$operation1
-storeResult["Result_2"]=$operation2
-storeResult["Result_3"]=$operation3
-storeResult["Result_4"]=$operation4
+storeResult["Result_1"]=$cal1
+storeResult["Result_2"]=$cal2
+storeResult["Result_3"]=$cal3
+storeResult["Result_4"]=$cal4
 
 len=${#storeResult[@]}
 count=0
