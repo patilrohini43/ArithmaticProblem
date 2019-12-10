@@ -27,4 +27,6 @@ do
 	array[((count++))]=${storeResult[Result_$i]}
 done
 
+
 echo $(printf "%d\n" ${array[@]} | sort -n  )
+echo $(printf "%d\n" ${array[@]} | sort -nr  )
