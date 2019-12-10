@@ -1,4 +1,5 @@
 echo "Welcome to Arithmatic Operation"
+
 read -p "Enter First Input" a
 read -p "Enter Second Input" b
 read -p "Enter Third Input" c
@@ -22,11 +23,11 @@ storeResult["Result_4"]=$operation4
 
 len=${#storeResult[@]}
 count=0
+
 for ((i=0;i<$len;i++))
 do
 	array[((count++))]=${storeResult[Result_$i]}
 done
-
 
 echo $(printf "%d\n" ${array[@]} | sort -n  )
 echo $(printf "%d\n" ${array[@]} | sort -nr  )
